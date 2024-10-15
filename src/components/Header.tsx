@@ -6,13 +6,12 @@ import './Header.css';
 const Header: React.FC = () => {
   return (
     <header className="App-header">
-      <nav>
-        <div className="logo">
-          <Link to="/">
-            <img src={CatalogLogo} alt="Dog's Catalog Logo" />
-          </Link>
-        </div>
-      </nav>
+      <div className="logo">
+        <Link to="/">
+          <img src={CatalogLogo} alt="Dog's Catalog Logo" />
+        </Link>
+      </div>
+
       <nav className="nav-container">
         <ul>
           <li><Link to="/">Catalog</Link></li>
