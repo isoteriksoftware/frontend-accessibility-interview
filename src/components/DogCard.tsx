@@ -61,9 +61,9 @@ const DogCard: React.FC<DogCardProps> = ({
         </div>
       </div>
 
-      <div className="dog-name-button" onClick={showAlert}>
+      <button className="dog-name-button" onClick={showAlert}>
         Click here to alert the dog's name
-      </div>
+      </button>
     </div>
   );
 };
