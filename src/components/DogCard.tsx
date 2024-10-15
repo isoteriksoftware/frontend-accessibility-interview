@@ -33,7 +33,7 @@ const DogCard: React.FC<DogCardProps> = ({
         className="dog-image"
         alt={`Photo of ${name}`}
       />
-      <h3>{name}</h3>
+      <h2>{name}</h2>
       <div>
         <div className="category">
           <p className="category-label">ID:</p>
