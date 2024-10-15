@@ -30,7 +30,8 @@ const DogCard: React.FC<DogCardProps> = ({
     <div className="dog-card" key={id}>
       <img 
         src={`https://placedog.net/400/400/random?id=${id}`}
-        className="dog-image" 
+        className="dog-image"
+        alt={`Photo of ${name}`}
       />
       <h3>{name}</h3>
       <div>
