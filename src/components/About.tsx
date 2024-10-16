@@ -1,5 +1,6 @@
 import React from "react";
-import "./About.css"; // Import the CSS for styling
+import "./About.css";
+import { Helmet } from "react-helmet"; // Import the CSS for styling
 
 const About: React.FC = () => {
   const handleClick = () => {
@@ -8,6 +9,10 @@ const About: React.FC = () => {
 
   return (
     <div className="about-container">
+      <Helmet>
+        <title>About This Website</title>
+      </Helmet>
+
       <h1>About This Website</h1>
       <p>
         This website is an accessibility exercise designed to demonstrate the

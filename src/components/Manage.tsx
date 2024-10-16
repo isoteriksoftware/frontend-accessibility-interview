@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Manage.css";
+import { Helmet } from "react-helmet";
 
 type FormField = {
   label: string;
@@ -72,6 +73,10 @@ const Manage = () => {
 
   return (
     <div className="manage-container">
+      <Helmet>
+        <title>Manage Catalog</title>
+      </Helmet>
+
       <h1>Add a New Dog</h1>
 
       <main>
