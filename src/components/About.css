@@ -42,7 +42,7 @@
   }
   
   .custom-button {
-    background-color: #007bff; /* Bootstrap Primary Color */
+    background-color: #0354AB; /* Changed background color */
     color: white;
     border: none;
     border-radius: 5px;
@@ -55,12 +55,12 @@
   
   /* Hover effect */
   .custom-button:hover {
-    background-color: #0056b3; /* Darker shade of blue */
+    background-color: #023469; /* Darker shade of blue */
   }
   
   /* Focus outline for accessibility */
   .custom-button:focus {
-    outline: 3px solid #80bdff; /* Light blue outline */
+    outline: 3px solid #023469; /* Light blue outline */
     outline-offset: 2px; /* Offset to separate from button */
   }
   
