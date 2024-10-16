@@ -60,6 +60,7 @@ a:hover {
 
 /* Focus outline for accessibility */
 .custom-button:focus {
+    background-color: #023469;
     outline: 3px solid #023469; /* Light blue outline */
     outline-offset: 2px; /* Offset to separate from button */
 }

@@ -58,9 +58,9 @@ const About: React.FC = () => {
       </ul>
 
       <div className="button-container">
-        <div className="custom-button" onClick={handleClick}>
+        <button className="custom-button" onClick={handleClick}>
           Was this page helpful? Click here to let us know!
-        </div>
+        </button>
       </div>
     </div>
   );

@@ -68,3 +68,8 @@ h2 {
 .dog-name-button:hover, .dog-name-button:focus {
     background-color: #023469;
 }
+
+.dog-name-button:focus {
+    outline: 3px solid #023469;
+    outline-offset: 2px; /* Offset to separate from button */
+}
