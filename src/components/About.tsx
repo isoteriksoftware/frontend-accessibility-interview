@@ -18,48 +18,45 @@ const About: React.FC = () => {
 
       <h2>Helpful Resources</h2>
 
-      {/* Making this list inaccessible */}
-      <div>
-        <div>
-          {/* Non-clickable text, looks like plain text instead of a link */}
-          <span
+      <ul className={"links-list"}>
+        <li>
+          <a
+            href="https://webaim.org/resources/contrastchecker/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="link-text"
-            onClick={() =>
-              window.open(
-                "https://webaim.org/resources/contrastchecker/",
-                "_blank",
-              )
-            }
           >
-            Link 1
-          </span>
+            Color Contrast Checker
+          </a>
           : Check color contrasts to ensure they meet the AA grade (should be at
           least 4.5).
-        </div>
-        <div>
-          <span
+        </li>
+
+        <li>
+          <a
+            href="https://htmlcolorcodes.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="link-text"
-            onClick={() => window.open("https://htmlcolorcodes.com/", "_blank")}
           >
-            Link 2
-          </span>
+            HTML Color Codes
+          </a>
           : A tool to help you pick hex colors.
-        </div>
-        <div>
-          <span
+        </li>
+
+        <li>
+          <a
+            href="https://chromewebstore.google.com/detail/landmark-navigation-via-k/ddpokpbjopmeeiiolheejjpkonlkklgp"
+            target="_blank"
+            rel="noopener noreferrer"
             className="link-text"
-            onClick={() =>
-              window.open(
-                "https://chromewebstore.google.com/detail/landmark-navigation-via-k/ddpokpbjopmeeiiolheejjpkonlkklgp",
-                "_blank",
-              )
-            }
           >
-            Link 3
-          </span>
+            Landmark Navigation Extension
+          </a>
           : Chrome extension to navigate through landmarks.
-        </div>
-      </div>
+        </li>
+      </ul>
+
       <div className="button-container">
         <div className="custom-button" onClick={handleClick}>
           Was this page helpful? Click here to let us know!

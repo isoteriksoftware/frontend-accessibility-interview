@@ -4,44 +4,44 @@
     margin: 0 auto;
     font-family: Arial, sans-serif;
     flex-grow: 1;
-  }
-  
-  h1 {
+}
+
+h1 {
     color: #333;
     font-size: 40px;
-  }
-  
-  h2 {
+}
+
+h2 {
     color: #555;
     font-size: 24px;
-  }
-  
-  p {
+}
+
+p {
     color: #666;
-  }
-  
-  a {
+}
+
+a {
     color: #007bff;
     text-decoration: none;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: underline;
-  }
-  
-  .link-text{
+}
+
+.link-text {
     color: green;
     cursor: pointer;
-  }
+}
 
 
-  .button-container {
+.button-container {
     display: flex;
     justify-content: center;
     margin: 20px;
-  }
-  
-  .custom-button {
+}
+
+.custom-button {
     background-color: #0354AB; /* Changed background color */
     color: white;
     border: none;
@@ -51,16 +51,20 @@
     cursor: pointer;
     transition: background-color 0.3s;
     text-align: center;
-  }
-  
-  /* Hover effect */
-  .custom-button:hover {
+}
+
+/* Hover effect */
+.custom-button:hover {
     background-color: #023469; /* Darker shade of blue */
-  }
-  
-  /* Focus outline for accessibility */
-  .custom-button:focus {
+}
+
+/* Focus outline for accessibility */
+.custom-button:focus {
     outline: 3px solid #023469; /* Light blue outline */
     outline-offset: 2px; /* Offset to separate from button */
-  }
-  
+}
+
+.links-list {
+    list-style-type: none;
+    padding: 0;
+}
