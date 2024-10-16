@@ -32,7 +32,7 @@ h2 {
     gap: 2px; /* Adds some space between label and value */
 }
 
-.category.last  {
+.category.last {
     margin-bottom: 50px;
 }
 
@@ -63,8 +63,12 @@ h2 {
     position: absolute;
     bottom: 16px;
     left: 16px;
-  }
+}
 
-  .dog-name-button:hover {
+.dog-name-button:hover {
     background-color: #023469;
-  }
+}
+
+.dog-name-button:focus {
+    background-color: #023469;
+}
