@@ -30,12 +30,12 @@
   }
   
   .nav-container a {
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none !important; /* Remove underline from links */
     color: #1a202c; /* Set link color */
     transition: color 0.3s; /* Smooth transition for hover effect */
   }
   
   .nav-container a:hover {
-    color: #3182ce; /* Change link color on hover */
+    color: #0354AB; /* Change link color on hover */
   }
   
