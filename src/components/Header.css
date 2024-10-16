@@ -38,4 +38,9 @@
   .nav-container a:hover {
     color: #0354AB; /* Change link color on hover */
   }
+
+  .nav-container a.active {
+    color: #0354AB; /* Change link color when active */
+    font-weight: bold; /* Make font bold when active */
+  }
   
