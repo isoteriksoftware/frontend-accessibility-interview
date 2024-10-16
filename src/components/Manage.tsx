@@ -31,7 +31,7 @@ const Manage = () => {
 
   return (
     <div className="manage-container">
-      <h2>Add a New Dog</h2>
+      <h1>Add a New Dog</h1>
       <main>
       <form onSubmit={handleSubmit} className="dog-form">
         <div className="form-group">
