@@ -41,7 +41,6 @@
     ]
   },
   "devDependencies": {
-    "@types/react-helmet": "^6.1.11",
-    "prettier": "^3.3.3"
+    "@types/react-helmet": "^6.1.11"
   }
 }
