@@ -8,12 +8,13 @@ const About: React.FC = () => {
   };
 
   return (
-    <div className="about-container">
+    <section className="about-container">
       <Helmet>
         <title>About This Website</title>
       </Helmet>
 
       <h1>About This Website</h1>
+
       <p>
         This website is an accessibility exercise designed to demonstrate the
         importance of accessibility in web development. It showcases various
@@ -67,7 +68,7 @@ const About: React.FC = () => {
           Was this page helpful? Click here to let us know!
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

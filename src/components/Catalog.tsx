@@ -78,7 +78,7 @@ const dogs = [
 
 const Catalog: React.FC = () => {
   return (
-    <div className="catalog">
+    <section className="catalog">
       <Helmet>
         <title>The Dogs Catalog</title>
       </Helmet>
@@ -89,7 +89,7 @@ const Catalog: React.FC = () => {
           <DogCard key={index} {...dog} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -72,7 +72,7 @@ const Manage = () => {
   };
 
   return (
-    <div className="manage-container">
+    <section className="manage-container">
       <Helmet>
         <title>Manage Catalog</title>
       </Helmet>
@@ -112,7 +112,7 @@ const Manage = () => {
           alt="Random Dog"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
