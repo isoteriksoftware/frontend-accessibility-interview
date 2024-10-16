@@ -1,5 +1,5 @@
-import React from 'react';
-import './DogCard.css';
+import React from "react";
+import "./DogCard.css";
 
 interface DogCardProps {
   id: number; // Add id prop
@@ -11,60 +11,61 @@ interface DogCardProps {
   favoriteMeal: string;
 }
 
-const DogCard: React.FC<DogCardProps> = ({ 
-    id, 
-    name, 
-    age, 
-    height, 
-    color, 
-    favoritePortFeature, 
-    favoriteMeal 
+const DogCard: React.FC<DogCardProps> = ({
+  id,
+  name,
+  age,
+  height,
+  color,
+  favoritePortFeature,
+  favoriteMeal,
 }) => {
-
   // Function to handle the alert
   const showAlert = () => {
     alert(`Dog's name is ${name}`);
   };
 
   return (
-    <div className="dog-card" key={id}>
-      <img 
+    <article className="dog-card" key={id}>
+      <img
         src={`https://placedog.net/400/400/random?id=${id}`}
         className="dog-image"
         alt={`Photo of ${name}`}
       />
+
       <h2>{name}</h2>
-      <div>
+
+      <dl>
         <div className="category">
-          <p className="category-label">ID:</p>
-          <p className="category-value">{id}</p>
+          <dt className="category-label">ID:</dt>
+          <dd className="category-value">{id}</dd>
         </div>
         <div className="category">
-          <p className="category-label">Age:</p>
-          <p className="category-value">{age} years</p>
+          <dt className="category-label">Age:</dt>
+          <dd className="category-value">{age} years</dd>
         </div>
         <div className="category">
-          <p className="category-label">Height:</p>
-          <p className="category-value">{height}</p>
+          <dt className="category-label">Height:</dt>
+          <dd className="category-value">{height}</dd>
         </div>
         <div className="category">
-          <p className="category-label">Color:</p>
-          <p className="category-value">{color}</p>
+          <dt className="category-label">Color:</dt>
+          <dd className="category-value">{color}</dd>
         </div>
         <div className="category">
-          <p className="category-label">Favorite Feature:</p>
-          <p className="category-value">{favoritePortFeature}</p>
+          <dt className="category-label">Favorite Feature:</dt>
+          <dd className="category-value">{favoritePortFeature}</dd>
         </div>
         <div className="category last">
-          <p className="category-label">Favorite Meal:</p>
-          <p className="category-value">{favoriteMeal}</p>
+          <dt className="category-label">Favorite Meal:</dt>
+          <dd className="category-value">{favoriteMeal}</dd>
         </div>
-      </div>
+      </dl>
 
       <button className="dog-name-button" onClick={showAlert}>
         Click here to alert the dog's name
       </button>
-    </div>
+    </article>
   );
 };
 

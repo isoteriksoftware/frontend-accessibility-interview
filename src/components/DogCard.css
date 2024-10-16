@@ -29,7 +29,8 @@ h2 {
     display: flex;
     flex-wrap: nowrap; /* Ensure items can not wrap */
     align-items: center; /* Align items properly if wrapping occurs */
-    gap: 2px; /* Adds some space between label and value */
+    gap: 5px; /* Adds some space between label and value */
+    margin-bottom: 20px; /* Space between categories */
 }
 
 .category.last {
@@ -48,6 +49,7 @@ h2 {
     white-space: normal; /* Allow the value to wrap if too long */
     word-wrap: break-word; /* Break long words if necessary */
     overflow-wrap: break-word; /* For broader browser support */
+    margin-left: 0;
 }
 
 .dog-name-button {
