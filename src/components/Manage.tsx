@@ -79,34 +79,32 @@ const Manage = () => {
 
       <h1>Add a New Dog</h1>
 
-      <main>
-        <form onSubmit={handleSubmit} className="dog-form">
-          {formFields.map(({ label, name, type, placeholder }) => (
-            <div key={name} className="form-group">
-              <label htmlFor={name}>{label}: </label>
-              <input
-                id={name}
-                type={type}
-                name={name}
-                value={resolveFormFieldValue(name)}
-                onChange={handleChange}
-                required
-                placeholder={placeholder}
-              />
-            </div>
-          ))}
+      <form onSubmit={handleSubmit} className="dog-form">
+        {formFields.map(({ label, name, type, placeholder }) => (
+          <div key={name} className="form-group">
+            <label htmlFor={name}>{label}: </label>
+            <input
+              id={name}
+              type={type}
+              name={name}
+              value={resolveFormFieldValue(name)}
+              onChange={handleChange}
+              required
+              placeholder={placeholder}
+            />
+          </div>
+        ))}
 
-          <button
-            type="submit"
-            className="submit-button"
-            onClick={() =>
-              alert(`Dog name: ${dogData.name} was added successfully!`)
-            }
-          >
-            Add Dog
-          </button>
-        </form>
-      </main>
+        <button
+          type="submit"
+          className="submit-button"
+          onClick={() =>
+            alert(`Dog name: ${dogData.name} was added successfully!`)
+          }
+        >
+          Add Dog
+        </button>
+      </form>
 
       <div className="dogs-form-image" tabIndex={0}>
         <img
