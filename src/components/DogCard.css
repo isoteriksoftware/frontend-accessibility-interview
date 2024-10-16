@@ -52,8 +52,9 @@ h3 {
     cursor: pointer;
     border-radius: 5px;
     user-select: none;
+    border: none;
   }
   
   .dog-name-button:hover {
-    background-color: #bdd6f0;
+    background-color: #023469;
   }
