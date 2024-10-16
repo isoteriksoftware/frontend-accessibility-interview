@@ -45,3 +45,4 @@ You can use the following useful links to help guide your fixes:
 Good luck!
 
 ### Changelog
+Access the [CHANGELOG.md](CHANGELOG.md) file to check the latest changes in the project.
