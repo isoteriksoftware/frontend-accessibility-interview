@@ -36,7 +36,7 @@ input {
 }
 
 .submit-button {
-  background-color: #007bff; /* Button background color */
+  background-color: #0354AB; /* Button background color */
   color: white; /* Button text color */
   padding: 10px 15px; /* Button padding */
   border: none; /* No border */
@@ -44,8 +44,8 @@ input {
   cursor: pointer; /* Pointer cursor on hover */
 }
 
-.submit-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+.submit-button:hover, .submit-button:focus {
+  background-color: #023469; /* Darker blue on hover */
 }
 
 .dogs-form-image {
