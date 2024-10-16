@@ -5,6 +5,7 @@
     padding: 16px; /* Padding inside the card */
     text-align: left; /* Align text to the left for better readability */
     transition: transform 0.3s, box-shadow 0.3s; /* Transition effects for hover */
+    position: relative; /* Position relative for absolute elements */
 }
 
 .dog-card:hover {
@@ -26,26 +27,32 @@ h2 {
 
 .category {
     display: flex;
-    white-space: "nowrap";
+    flex-wrap: nowrap; /* Ensure items can not wrap */
+    align-items: center; /* Align items properly if wrapping occurs */
+    gap: 2px; /* Adds some space between label and value */
 }
 
-.category-label,
-.category-value {
+.category.last  {
+    margin-bottom: 50px;
+}
+
+.category-label {
     font-weight: bold;
     color: #333;
-    white-space: nowrap;
+    white-space: nowrap; /* Keep the label on one line */
 }
 
 .category-value {
-    margin-left: 2px;
     font-weight: normal;
     color: #555;
+    white-space: normal; /* Allow the value to wrap if too long */
+    word-wrap: break-word; /* Break long words if necessary */
+    overflow-wrap: break-word; /* For broader browser support */
 }
 
 .dog-name-button {
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 10px;
     background-color: #0354AB;
     color: white;
     text-align: center;
@@ -53,6 +60,9 @@ h2 {
     border-radius: 5px;
     user-select: none;
     border: none;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
   }
 
   .dog-name-button:hover {

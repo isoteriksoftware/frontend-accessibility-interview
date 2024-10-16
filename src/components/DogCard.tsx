@@ -55,7 +55,7 @@ const DogCard: React.FC<DogCardProps> = ({
           <p className="category-label">Favorite Feature:</p>
           <p className="category-value">{favoritePortFeature}</p>
         </div>
-        <div className="category">
+        <div className="category last">
           <p className="category-label">Favorite Meal:</p>
           <p className="category-value">{favoriteMeal}</p>
         </div>
