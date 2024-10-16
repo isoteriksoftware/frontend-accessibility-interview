@@ -1,5 +1,5 @@
 .dog-card {
-    background-color: #f4e1c6 !important; 
+    background-color: #f4e1c6 !important;
     border-radius: 12px; /* Rounded corners for a softer look */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
     padding: 16px; /* Padding inside the card */
@@ -18,28 +18,28 @@
     border-radius: 12px; /* Match card's corners */
 }
 
-h3 {
-    font-size: 24px; 
-    color: #333; 
-    margin: 12px 0; 
+h2 {
+    font-size: 1.5rem; /* Use rem for better scalability */
+    color: #333;
+    margin: 12px 0;
 }
 
 .category {
-    display: flex; 
-    white-space: "nowrap"; 
+    display: flex;
+    white-space: "nowrap";
 }
 
 .category-label,
 .category-value {
-    font-weight: bold; 
-    color: #333; 
-    white-space: nowrap; 
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
 }
 
 .category-value {
     margin-left: 2px;
     font-weight: normal;
-    color: #555; 
+    color: #555;
 }
 
 .dog-name-button {
@@ -54,7 +54,7 @@ h3 {
     user-select: none;
     border: none;
   }
-  
+
   .dog-name-button:hover {
     background-color: #023469;
   }
