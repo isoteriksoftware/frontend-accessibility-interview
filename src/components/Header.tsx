@@ -36,7 +36,7 @@ const Header: React.FC = () => {
       </div>
 
       <nav className="nav-container">
-        <ul>
+        <ul aria-label="Navigation list">
           {navLinks.map((navLink, index) => (
             <li key={index}>
               <Link to={navLink.to} className={location.pathname === navLink.to ? "active" : ""}

@@ -56,7 +56,6 @@ const Manage = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("New Dog Added:", dogData);
     setDogData({
       name: "",
       age: "",
@@ -65,6 +64,8 @@ const Manage = () => {
       favoriteToy: "",
       favoriteMeal: "",
     });
+
+    alert(`Dog name: ${dogData.name} was added successfully!`)
   };
 
   const resolveFormFieldValue = (name: string) => {
@@ -90,6 +91,7 @@ const Manage = () => {
               value={resolveFormFieldValue(name)}
               onChange={handleChange}
               required
+              aria-required="true"
               placeholder={placeholder}
             />
           </div>
@@ -98,9 +100,7 @@ const Manage = () => {
         <button
           type="submit"
           className="submit-button"
-          onClick={() =>
-            alert(`Dog name: ${dogData.name} was added successfully!`)
-          }
+          aria-label="Submit dog details"
         >
           Add Dog
         </button>
@@ -109,7 +109,7 @@ const Manage = () => {
       <div className="dogs-form-image" tabIndex={0}>
         <img
           src={`https://placedog.net/1000/300/random?id=128`}
-          alt="Random Dog"
+          alt=""
         />
       </div>
     </section>

@@ -6,6 +6,8 @@
     text-align: left; /* Align text to the left for better readability */
     transition: transform 0.3s, box-shadow 0.3s; /* Transition effects for hover */
     position: relative; /* Position relative for absolute elements */
+    list-style-type: none; /* Removes the bullets */
+    margin-left: 0;        /* Removes default margin */
 }
 
 .dog-card:hover {

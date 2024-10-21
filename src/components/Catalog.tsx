@@ -1,31 +1,31 @@
 import React from "react";
 import DogCard from "./DogCard";
 import "./Catalog.css";
-import { Helmet } from "react-helmet"; // Import the CSS for the catalog
+import { Helmet } from "react-helmet";
 
 const dogs = [
   {
-    id: 1, // Unique numeric ID
+    id: 1,
     name: "Buddy",
     age: 3,
-    picture: "https://http.dog/200.jpg", // Replace with actual image paths
+    picture: "https://http.dog/200.jpg",
     height: "24 inches",
     color: "Golden",
     favoritePortFeature: "Fetching Ball",
     favoriteMeal: "Chicken and Rice",
   },
   {
-    id: 2, // Unique numeric ID
+    id: 2,
     name: "Bella",
     age: 2,
     picture: "https://http.dog/204.jpg",
     height: "22 inches",
     color: "Brown",
     favoritePortFeature: "Jumping",
-    favoriteMeal: "Buchari", // Changed meal to Buchari
+    favoriteMeal: "Buchari",
   },
   {
-    id: 3, // Unique numeric ID
+    id: 3,
     name: "Charlie",
     age: 4,
     picture: "https://http.dog/203.jpg",
@@ -35,17 +35,17 @@ const dogs = [
     favoriteMeal: "Beef Stew",
   },
   {
-    id: 4, // Unique numeric ID
+    id: 4,
     name: "Daisy",
     age: 1,
     picture: "https://http.dog/599.jpg",
     height: "20 inches",
     color: "White",
     favoritePortFeature: "Digging",
-    favoriteMeal: "Green Day", // Changed meal to Green Day
+    favoriteMeal: "Green Day",
   },
   {
-    id: 5, // Unique numeric ID
+    id: 5,
     name: "Max",
     age: 5,
     picture: "https://http.dog/530.jpg",
@@ -55,7 +55,7 @@ const dogs = [
     favoriteMeal: "Fish and Chips",
   },
   {
-    id: 6, // Unique numeric ID
+    id: 6,
     name: "Luna",
     age: 3,
     picture: "https://http.dog/496.jpg",
@@ -65,7 +65,7 @@ const dogs = [
     favoriteMeal: "Pasta",
   },
   {
-    id: 7, // Unique numeric ID
+    id: 7,
     name: "Rocky",
     age: 6,
     picture: "https://http.dog/561.jpg",
@@ -84,11 +84,11 @@ const Catalog: React.FC = () => {
       </Helmet>
 
       <h1>Dogs Catalog</h1>
-      <div className="dog-cards-container">
+      <ul className="dog-cards-container" aria-label="Dogs Catalog">
         {dogs.map((dog, index) => (
           <DogCard key={index} {...dog} />
         ))}
-      </div>
+      </ul>
     </section>
   );
 };

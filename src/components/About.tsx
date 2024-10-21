@@ -8,12 +8,12 @@ const About: React.FC = () => {
   };
 
   return (
-    <section className="about-container">
+    <section className="about-container" aria-labelledby="about-heading">
       <Helmet>
         <title>About This Website</title>
       </Helmet>
 
-      <h1>About This Website</h1>
+      <h1 id="about-heading">About This Website</h1>
 
       <p>
         This website is an accessibility exercise designed to demonstrate the
@@ -24,13 +24,14 @@ const About: React.FC = () => {
 
       <h2>Helpful Resources</h2>
 
-      <ul className={"links-list"}>
+      <ul className={"links-list"} aria-label="List of helpful accessibility resources">
         <li>
           <a
             href="https://webaim.org/resources/contrastchecker/"
             target="_blank"
             rel="noopener noreferrer"
             className="link-text"
+            aria-label="Color Contrast Checker, opens in a new tab"
           >
             Color Contrast Checker
           </a>
@@ -44,6 +45,7 @@ const About: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="link-text"
+            aria-label="HTML Color Codes, opens in a new tab"
           >
             HTML Color Codes
           </a>
@@ -56,6 +58,7 @@ const About: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="link-text"
+            aria-label="Landmark Navigation Extension, opens in a new tab"
           >
             Landmark Navigation Extension
           </a>
@@ -64,7 +67,7 @@ const About: React.FC = () => {
       </ul>
 
       <div className="button-container">
-        <button className="custom-button" onClick={handleClick}>
+        <button className="custom-button" onClick={handleClick} aria-label="Provide feedback on the helpfulness of this page">
           Was this page helpful? Click here to let us know!
         </button>
       </div>
