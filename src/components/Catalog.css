@@ -9,6 +9,7 @@
     display: grid; /* Use grid layout for cards */
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
     gap: 16px; /* Space between cards */
+    padding-left: 0;
 }
 
 .dog-card {
